@@ -27,6 +27,7 @@ ul {
     width: 90%;
     margin: auto;
 }
+  
 
 /* Navigation */
 .nav-main {
@@ -210,7 +211,8 @@ hr {
     background: #2f3648;
     color: #ffffff;
     font-size: 22px;
-    padding: 35px 0;
+    padding: 10px ;
+    text-align: center;
 }
 
 .footer-container {
@@ -302,10 +304,17 @@ hr {
         padding: 60px 20px;
     }
 
+    .footer-links {
+
+        display: grid;
+        justify-content: flex-end;
+    }
+    
     .footer-container {
         display: grid;
         gap: 10px;
         align-items: flex-start;
         justify-content: center;
     }
+
 }
