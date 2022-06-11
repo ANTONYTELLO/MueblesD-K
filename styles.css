@@ -35,12 +35,12 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 65px;
     padding: 20px 0;
 }
 
 .nav-sofalogo8 {
-    width: 150px;
+    width: 155px;
 }
 
 /* NAV LEFT */
@@ -52,7 +52,7 @@ ul {
     padding: 10px;
 }
 .nav-main ul li a {
-    padding: 10px;
+    padding: 15px;
 }
 .nav-main ul li a:hover {
     border-bottom: 2px solid #ffff;
@@ -61,7 +61,7 @@ ul {
 
 .nav-main ul.nav-menu {
     flex: 1;
-    margin-left: -8px;
+    margin-left: 20px;
 }
 
 .menu-btn {
