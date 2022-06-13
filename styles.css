@@ -223,7 +223,6 @@ hr {
 }
 
 
-
 .footer-container ul li {
     line-height: 2.8;
 }
@@ -236,6 +235,7 @@ hr {
     text-align: center;
     padding-bottom: 20px;
 }
+
 
 @media (max-width: 700px) {
 
@@ -257,6 +257,7 @@ hr {
     }
 
     .nav-main ul.nav-menu.show {
+        position: flex;
         transform: translateX(-20px);
     }
 
@@ -317,4 +318,5 @@ hr {
         justify-content: center;
     }
 
+       
 }

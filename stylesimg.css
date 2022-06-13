@@ -25,12 +25,16 @@ h1{
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 20px;
+    padding: 10px 0;
+    overflow: hidden;
 
 }
 
 .galeria > a{
     display: block;
-    position: relative;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
@@ -40,7 +44,7 @@ h1{
 .galeria img{
     width: 100%;
     vertical-align: top;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
     transition: transform 0.5s;
 
@@ -67,8 +71,8 @@ h1{
 }
 
 .light-box img{
-    width: 75vw;
-    max-height: 70vh;
+    width: 90vw;
+    max-height: 90vh;
 }
 
 .light-box:target{
