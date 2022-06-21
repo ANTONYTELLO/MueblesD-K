@@ -24,7 +24,7 @@ ul {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
   
@@ -36,11 +36,11 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .nav-sofalogo8 {
-    width: 155px;
+    width: 160px;
 }
 
 /* NAV LEFT */
@@ -49,11 +49,9 @@ ul {
 }
      
 .nav-main ul li {
-    padding: 10px;
+    padding: 27px;
 }
-.nav-main ul li a {
-    padding: 15px;
-}
+
 .nav-main ul li a:hover {
     border-bottom: 2px solid #ffff;
 }
@@ -61,13 +59,13 @@ ul {
 
 .nav-main ul.nav-menu {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .menu-btn {
     position: absolute;
     cursor: pointer;
-    top: 10px;
+    top: 25px;
     right: 30px;
     z-index: 2;
     display: none;
@@ -123,7 +121,7 @@ hr {
 
 .news-cards img {
     width: 100%;
-    height: 180px;
+    height: 270px;
 }
 
 .news-cards h3 {
