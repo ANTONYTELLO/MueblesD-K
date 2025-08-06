@@ -430,6 +430,9 @@
   .section-p11 {
       padding: 0px 10px;            
   }
+  .contenedor-nav{
+    padding: 0px 10px;
+  }
   #product1 .pro-container {
       padding-top: 0px;
   }

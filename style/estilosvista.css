@@ -28,7 +28,7 @@
 
 #product1 .pro img {
     width: 100%;
-    height: 350px;
+    height: 430px;
     border-radius: 20px;
 }
 
@@ -66,7 +66,7 @@
         min-width: 32.6%;
     }
     #product1 .pro img {
-        height: 310px;
+        height: 360px;
     }
 }
 
@@ -75,7 +75,7 @@
         min-width: 49%;
     }
     #product1 .pro img {
-        height: 350px;
+        height: 360px;
 }
 
 @media (max-width: 1280px) {
