@@ -1,0 +1,1267 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+:root{
+  --color1: #000;
+  --color2: rgba(23, 180, 83, 0.877);
+  --color3: rgba(11,194,211, 0.623);
+  --fondo1: #ffff;
+  --titulos: 53px;
+  --subtitulos: 21px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido:45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Scroll Barra Personalizada */
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ff9d00;
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'open sans';
+  background: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23f0f1d9' fill-opacity='0.8' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: #babdae;
+}
+
+/* Preloader */
+.hidden{
+  overflow: hidden;
+}
+
+.centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+/* Header */
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: url(../img/fondo22.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Modelos 321 */
+
+.mode-muebles321 {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/modu321img/gala/2.jpg");
+}
+
+.mode-muebles321 .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-muebles321 .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-muebles321 .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelo Vip */
+
+.mode-mueblesvip {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moducamaimg/1.jpg");
+}
+
+.mode-mueblesvip .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesvip .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-mueblesvip .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelo Shalom */
+
+.mode-shalom {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/modusheimg/rata4.webp");
+}
+
+.mode-shalom .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-shalom .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-shalom .info h2 {
+    color: #c7c7c7;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.mode-shalom .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+/* Modelos Londres */
+
+.mode-londres {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/modulondres/1.webp");
+}
+
+.mode-londres .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-londres .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-londres .info h2 {
+    color: #c7c7c7;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.mode-londres .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+/* Modelos modular Octagonal */
+
+.mode-moduoctagonal {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduoctagonal/1.webp");
+}
+
+.mode-moduoctagonal .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+
+.mode-moduoctagonal .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-moduoctagonal .info h2 {
+    color: #c7c7c7;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.mode-moduoctagonal .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+/* Modelos modular vintage */
+
+.mode-moduvintage {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduvintageimg/turqueza3.webp");
+}
+
+.mode-moduvintage .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-moduvintage .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-moduvintage .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+/* Modelos modular vintage Vigos */
+
+.mode-moduvintagevigos {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduvintageimg/crema1.jpg");
+}
+
+.mode-moduvintagevigos .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-moduvintagevigos .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-moduvintagevigos .info h2 {
+    color: #c7c7c7;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.mode-moduvintagevigos .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos modular vintage Botones */
+
+.mode-moduvintagebotones {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduvintageimg/azul1.webp");
+}
+
+.mode-moduvintagebotones .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-moduvintagebotones .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-moduvintagebotones .info h2 {
+    color: #c7c7c7;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.mode-moduvintagebotones .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos modular */
+
+.mode-modular {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduimg/modubatman/5.webp");
+}
+
+.mode-modular .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-modular .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-modular .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos modular botones */
+
+.mode-modularbotones {
+width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduimg/2300.jpg");
+}
+
+.mode-modularbotones .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-modularbotones .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-modularbotones .info h2{
+	color: #c7c7c7;
+    font-size: 30px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos modular Vigos */
+.mode-modularvigo {
+width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../img/products/moduimg/moduvigos/10.webp");
+}
+
+.mode-modularvigo .info{
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-modularvigo .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-modularvigo .info h2{
+	color: #c7c7c7;
+    font-size: 30px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+
+/* Capa */
+.capa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+.nav1{
+  background: transparent;
+  position: fixed;
+  height: 100px;
+  color:#000;
+  z-index: 9;
+}
+
+.nav2{
+  background: var(--fondo1);
+  height:100px;
+  color:#000;
+  z-index: 1;
+}
+
+#equipo h3 ,
+#trabajo h3 {
+  color: #000;
+}
+#equipo p ,
+#trabajo p {
+  color: #000;
+}
+
+.contenedor-nav{
+  display: flex;
+  margin: auto;
+  padding: 0px 30px;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  overflow: hidden;
+}
+
+nav .enlaces a{
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 17px;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+
+nav .enlaces a:hover{
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+.logo, .logo img{ height:100px;}
+
+.icono{
+  display:none;
+  font-size: 30px;
+  padding: 23.5px 20px;
+}
+
+.textos{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  overflow: hidden;
+  text-align: center;
+}
+
+.textos>h1{font-size:80px;;}
+
+.textos>h2 {
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+
+.textos button {
+  background-image: url(../img/button123.png);
+  background-color: transparent;
+  color: #222;
+  border: 0;
+  padding: 15px 50px 14px 60px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Main */
+
+.contenedor{
+  margin:auto;
+  padding: 10px 5px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h3{
+  font-size: var(--titulos);
+  color: #fff;
+  margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+  font-size: var(--subtitulos);
+  font-weight: 400;
+  color: #fff;
+}
+
+.contenedor img {
+  width: 250px;
+}
+
+.after::after{
+  content:'';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: var(--espacios-contenido);
+}
+
+.after1::after{
+  content:'';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: #000;
+  margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  overflow: hidden;
+  height:400px;
+}
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about{
+  background: url(/img/descarga.jpeg);
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.servicios{
+  display: flex;
+  color:#fff;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.caja-servicios{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.caja-servicios>h4{
+  margin-bottom: var(--espacios);
+}
+
+.caja-servicios>p{
+  text-align: center;
+}
+
+.botones-work{
+  overflow: hidden;
+}
+
+.botones-work li{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: var(--espacios-contenido);
+  padding: 8px 50px;
+  border: 1px solid var(--color1);
+  list-style: none;
+  color: var(--color1);
+}
+
+.botones-work li:hover{
+  background: var(--color1);
+  color:#fff;
+  cursor: pointer;
+}
+
+.botones-work .active{
+  background: var(--color1);
+  color:#fff;
+}
+
+.galeria-work{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cont-work{
+  width: 31.50%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: var(--espacios-contenido);
+}
+
+.img-work{
+  height: 90%;
+  width: 100%;
+}
+
+.img-work img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textos-work{
+  height: 10%;
+}
+
+.textos-work h4{
+  line-height: 40px;
+  font-weight: 900;
+}
+
+/* Footer */
+
+#page-footer {
+  background-image: url(../img/footerend4.png);
+  width: 100%;
+  height: 60vh;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+}
+
+#page-footer p {
+  color: #fff;
+  font-size: 25px;
+  padding: 30px 0;
+  padding-bottom: 50px;
+  letter-spacing: 8px;
+}
+
+.marca-logo{
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.marca-logo img{
+  width: 40%;
+}
+
+.iconos{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.fab{
+  font-size: 60px;
+  color: #FFF;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+
+
+.footer-copy2 {
+  background: #2f3648;
+  color: #616161;
+  font-size: 22px;
+  padding: 10px 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-copy3 {
+  background: #2f3648;
+  color: #616161;
+  font-size: 22px;
+  padding: 10px 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#pagination {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#pagination ul {
+  list-style: none;
+  
+}
+#pagination ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#pagination ul li a:hover {
+  background: #f3e5ab;
+}
+
+#pagination ul li .active {
+  background: #f3e5ab;
+}
+
+#pagination ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #000;
+  font-weight: 800;
+  background: #2f3648;
+  text-decoration: none;
+}
+
+/* FOOTER LINKS*/
+.footer-links {
+  background: #2f3648;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer-container {
+  display: grid;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.footer-copy {
+  background: #2f3648;
+  color: #616161;
+  font-size: 22px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1300px){
+  .nav2{
+    color: #fff;
+  }
+  .icono{
+    display:block;
+    cursor: pointer;
+  }
+  #product1 .pro {
+    min-width: 32.6%;
+  }
+  #product1 .pro img {
+    height: 310px;
+  }
+  nav .enlaces a{
+    font-size: 24px;
+  }
+  .enlaces{
+    position: fixed;
+    top: 100px;
+    background-color: #babdae;
+    background-image: url(/img/cojines1.jpeg);
+    background-size: 100% 450px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    right: 0;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow: hidden;
+  }
+  .enlaces a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: initial;
+    color:#fff;
+  }
+  .textos>h1{font-size: 70px;}
+  .textos>h2{font-size:35px;}
+
+  .content-card{
+    width: 48%;
+    margin-bottom:var(--margenes);
+  }
+
+  :root{
+    --margenes: 30px;
+  }
+  .cont-work{
+    width: 48%;
+  }
+  .marca-logo img{
+    width: 40%;
+  }
+
+    /* Modelo Londres */
+ .mode-londres {
+    height: 65vh;
+}
+  /* Modelos modular octagonal */
+ .mode-moduoctagonal {
+    height: 65vh;
+}
+  /* Modelos modular vintage */
+ .mode-moduvintage {
+    height: 65vh;
+}
+/* Modelos modular vintage vigos */
+ .mode-moduvintagevigos {
+    height: 65vh;
+}
+/* Modelos modular vintage Botones */
+ .mode-moduvintagebotones {
+    height: 65vh;
+}
+/* Modelos modular */
+
+ .mode-modular {
+    height: 65vh;
+}
+/* Modelos modular Vigos */
+
+ .mode-modularvigo {
+    height: 65vh;
+}
+}
+
+@media screen and (max-width: 999px){
+  .caja-servicios{
+    width: 53%;
+    margin-bottom: var(--margenes);
+  }
+  .cont-work{
+    width: 95%;
+  }
+  .marca-logo img{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  :root{
+    --espacios-contenido: 25px;
+  }
+
+  .content-card{
+    width: 90%;
+  }
+
+  .caja-servicios{
+    width: 100%;
+    margin-bottom: var(--margenes);
+  }
+
+  .cont-work{
+    width: 95%;
+  }
+
+  .marca-logo{
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .iconos{
+    margin: auto;
+  }
+}
+@media (max-width: 480px){
+  .contenedor-nav {
+    padding: 0px 10px;
+}
+}
+
+
+@media (max-width: 477px) {
+
+#pagination {
+    padding: 10px 0px;
+}
+#pagination ul li {
+    margin-right: 0px;
+}
+  /* Modelos de Muebles321 */
+    
+  .mode-muebles321 {
+    height: 60vh;
+}
+
+.mode-muebles321 .info h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.mode-muebles321 .info p{
+    color: #fff;
+    font-size: 22px;
+}
+/* Modelo Vip */
+    
+.mode-mueblesvip {
+  height: 50vh;
+}
+
+.mode-mueblesvip .info h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.mode-mueblesvip .info p{
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Modelo Shalom */
+    
+  .mode-shalom {
+    height: 42vh;
+}
+
+.mode-shalom .info h1 {
+    font-size: 38px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+}
+
+.mode-shalom .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Modelo Londres */
+    
+  .mode-londres {
+    height: 42vh;
+}
+
+.mode-londres .info h1 {
+    font-size: 38px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+}
+
+.mode-londres .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+
+/* Modelos modular Octagonal */
+    
+  .mode-moduoctagonal {
+    height: 42vh;
+}
+
+.mode-moduoctagonal .info h1 {
+    font-size: 38px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+}
+
+.mode-moduoctagonal .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Modelos modular vintage Botones */
+    
+  .mode-moduvintagebotones {
+    height: 42vh;
+}
+
+.mode-moduvintagebotones .info h1 {
+    font-size: 38px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.mode-moduvintagebotones .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Modelos modular vintage Vigos */
+    
+  .mode-moduvintagevigos {
+    height: 42vh;
+}
+
+.mode-moduvintagevigos .info h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    margin-top: 80px;
+}
+
+.mode-moduvintagevigos .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Modelos modular vintage */
+    
+  .mode-moduvintage {
+    height: 42vh;
+}
+
+.mode-moduvintage .info h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.mode-moduvintage .info p{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Modelos modular */
+    
+.mode-modular {
+  height: 42vh;
+}
+
+.mode-modular .info h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+
+}
+
+.mode-modular .info p{
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Modelos modular Botones */
+    
+.mode-modularbotones {
+    height: 42vh;
+}
+
+.mode-modularbotones .info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mode-modularbotones .info p{
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Modelos modular Vigos */
+
+.mode-modularvigo {
+  height: 42vh;
+}
+
+.mode-modularvigo .info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.mode-modularvigo .info p{
+  color: #fff;
+  font-size: 22px;
+}
+
+}
+
+@media screen and (max-width: 450px){
+  .textos>h1 {
+    font-size: 60px;
+    }
+  #trabajo h3 {
+    font-size: 40px;
+  }
+  .footer-container {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  header{
+    background-attachment: inherit;
+  }
+  .botones-work li{
+    padding: 8px 12px;
+  }
+
+  .textos>h1 {
+    font-size: 50px;
+    }
+.contenedor h3{
+  font-size: 50px;
+}
+.marca-logo img{
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 380px){
+  #page-footer {
+    height: 40vh;
+    padding: 11px;
+  }
+  #page-footer p {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+  }
+  .fab{
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+
+}
+

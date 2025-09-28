@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+header2 {
+  width: 100%;
+  background: url(/img/contacto.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100vw 100vh;
+  display: flow-root;
+}
+
+:root {
+    --primary: #42E2B8;
+    --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    --black: black;
+  }
+  
+  .u-wrapper {
+    margin: auto;
+    padding: 20px 20px;
+    background: rgb(47 54 72 / 94%);
+    width: 600px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  .h1 {
+    font-size: 59px;
+    line-height: 95px;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  
+  .h1 span {
+    display: block;
+  }
+  
+  .h3 {
+    font-size: 48px;
+    line-height: 77px;
+  }
+  
+  .btn {
+    /* font-family: var(--font); */
+    border-radius: 90px;
+    letter-spacing: 1.25px;
+    background: initial;
+    block-size: 50px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid var(--black);
+    font-weight: bold;
+    padding: 0 1.5em;
+  }
+  .btn.full {
+    width: 100%;
+  }
+  
+  .btn.primary {
+    background: var(--primary);
+  }
+  
+  
+  .btn.secondary img{
+    position: relative;
+    bottom: 1px;
+  }
+  .btn i {
+    display: inline-block;
+  }
+  .btn span {
+    vertical-align: middle;
+  }
+  .btn i img {
+    vertical-align: middle;
+  }
+  
+  
+  .tag span {
+    padding: .5em;
+    background: var(--black);
+    color: var(--primary);
+    box-shadow: -4px 4px 0 white;
+  }
+  
+  .form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  .form .tag span {
+    display: block;
+    text-align: center;
+}
+  
+  .form label {
+    display: block;
+    font-size: 19px;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+  
+  .contact {
+    margin-block-end: 1em;
+    padding: 15vh 10px 0;
+  }
+
+
+/* Social */
+.social {
+    margin: 30px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+    color: #fff;
+}
+  
+  .footer {
+    text-align: center;
+  }
+    
+/* Scroll Barra Personalizada */
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #ff9d00;
+    border-radius: 5px;
+}
+
+    @media (max-width: 768px) {
+    .u-wrapper {
+        width: 90%;
+    }
+    .contact {
+      padding: 150px 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header2 {
+    background: url(../img/portadacontacto.webp);
+    background-size: 100vw 100%;
+    background-attachment: inherit;
+  }
+    .u-wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        background: rgba(0, 0, 0, 0.04);
+        margin-top: 20px;
+    }
+
+
+}

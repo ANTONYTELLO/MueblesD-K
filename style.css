@@ -1,0 +1,1279 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+body {
+    width: 100%;
+    background-color: #babdae;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23f0f1d9' fill-opacity='0.8' fill-rule='evenodd'/%3E%3C/svg%3E");
+}    
+
+/* Scroll Barra Personalizada */
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #ff9d00;
+    border-radius: 5px;
+}
+
+
+h1 {
+    font-size: 50px;
+    line-height: 110px;
+    color: #222;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 20px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 110px 110px 40px 20px;            
+}
+
+.section-p111 {
+    padding: 0 30px;            
+}
+
+.section-m1 { 
+    margin: 40px 0;           
+}
+
+button.normal {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25%;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.normal a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Header */
+
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+  }
+  
+
+
+
+  .nav1{
+    background: transparent;
+    height: 100px;
+    color:#000;
+  }
+  
+  .nav2{
+    background: var(--fondo1);
+    height:100px;
+    color:#000;
+    z-index: 1;
+  }
+  
+  .contenedor-nav{
+    display: flex;
+    margin: auto;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    overflow: hidden;
+  }
+  
+  nav .enlaces a{
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 17px;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+  }
+  
+  nav .enlaces a:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+  }
+  
+  .logo, .logo img{ height:100px;}
+  
+  .icono{
+    display:none;
+    font-size: 30px;
+    padding: 23.5px 20px;
+  }
+
+
+/* Home Page */
+
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 32.4%;
+    padding: 5px 5px;
+    border: 3px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 15px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product1 .pro .des i {
+    font-size: 20px;
+    color: rgba(255, 255, 0);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Social */
+.social {
+    margin: 40px;
+}
+
+.social p {
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.links {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    color: #000;
+    margin: 0 60px;
+}
+
+/* FOOTER LINKS*/
+.footer-links {
+    background: #2f3648;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer-copy {
+    background: #2f3648;
+    color: #616161;
+    font-size: 22px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* Tienda Page */
+
+#page-header {
+    background-image: url("img/foto2.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0px;
+}
+
+#page-header h2 {
+    color: #fff;
+    font-size: 90px;
+    padding: 20px;
+    letter-spacing: 8px;
+}
+
+#page-header p {
+    color: #fff;
+    font-size: 30px;
+}
+
+#pagination {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#pagination ul {
+    list-style: none;
+    
+}
+#pagination ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#pagination ul li a:hover {
+    background: #f3e5ab;
+}
+
+#pagination ul li .active {
+    background: #f3e5ab;
+}
+
+#pagination ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    font-weight: 800;
+    background: #2f3648;
+    text-decoration: none;
+}
+
+/* Single Product */
+
+#prodetails {
+    display: flex;
+    margin-top: 0px;
+}
+
+#prodetails .single-pro-image {
+    width: 50%;
+    margin-right: 80px;
+    padding-top: 60px;
+    margin-left: 54px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-datails {
+    width: 43.8%;
+    padding-top: 90px;
+}
+
+#prodetails .single-pro-datails h6 {
+    font-size: 30px;
+}
+
+#prodetails .single-pro-datails h4 {
+    font-size: 50px;
+    padding: 35px 0 20px 0;
+}
+
+#prodetails .single-pro-datails h2 {
+    font-size: 30px;
+    padding: 0px 0 20px 0;
+
+}
+#prodetails .single-pro-datails pre {
+    font-size: 25px;
+}
+#prodetails .single-pro-datails select {
+    display: block;
+    padding: 5px 30%;
+    margin-bottom: 15px;
+    border: none;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#prodetails .single-pro-datails option {
+    font-weight: 600;
+}
+
+#prodetails .single-pro-datails input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-datails input:focus {
+    outline: none;
+}
+#prodetails .single-pro-datails button {
+    background: #00e059;
+    border-style: solid;
+    border-width: thin;
+}
+
+#prodetails .single-pro-datails i {
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+#prodetails .single-pro-datails span {
+    font-size: 35px;
+}
+
+
+
+/* Modelos Muebles321 */
+
+.mode-muebles321 {
+	width: 100%;
+	height: 90vh;
+	animation: mode-muebles321 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-muebles321 {
+	0%, 25%{
+		background-image: url("img/products/modu321img/lineal/22.jpg");
+	}
+	26%, 50%{
+		background-image: url("img/products/modu321img/anyar/anyar22.jpg");
+	}
+	51%, 75%{
+		background-image: url("img/products/modu321img/coklat/gris2.jpg");
+	}
+	76%, 100%{
+		background-image: url("img/products/modu321img/gala/22.jpg");
+	}
+}
+
+.mode-muebles321 .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-muebles321 .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-muebles321 .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Mueblescama */
+
+.mode-mueblescama {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblescama 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblescama {
+	0%, 25%{
+		background-image: url("img/products/moducamaimg/1.jpg");
+	}
+	26%, 50%{
+		background-image: url("img/products/moducamaimg/100.jpg");
+	}
+	51%, 75%{
+		background-image: url("img/products/moducamaimg/9.jpg");
+	}
+	76%, 100%{
+		background-image: url("img/products/moducamaimg/10.jpg");
+	}
+}
+
+.mode-mueblescama .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblescama .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-mueblescama .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Mueblesdual */
+
+.mode-mueblesdual {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesdual 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesdual {
+	0%, 25%{
+		background-image: url("img/products/modudualimg/3.jpg");
+	}
+	26%, 50%{
+		background-image: url("img/products/modudualimg/8.jpg");
+	}
+	51%, 75%{
+		background-image: url("img/products/modudualimg/100.jpg");
+	}
+	76%, 100%{
+		background-image: url("img/products/modudualimg/1.jpg");
+	}
+}
+
+.mode-mueblesdual .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesdual .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-mueblesdual .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos MueblesBurbuja */
+
+.mode-mueblesburbuja {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesburbuja 20s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesburbuja {
+	0%, 25%{
+		background-image: url("/img/products/moduburbuimg/burbujaconpuff/10.webp");
+	}
+	26%, 50%{
+		background-image: url("/img/products/moduburbuimg/burbujaconpuff/14.webp");
+	}
+	51%, 75%{
+		background-image: url("/img/products/moduburbuimg/burbujaconpuff/11.webp");
+	}
+	76%, 100%{
+		background-image: url("/img/products/moduburbuimg/burbujaconpuff/17.webp");
+	}
+}
+.mode-mueblesburbuja .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesburbuja .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-mueblesburbuja .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos MueblesRex */
+
+.mode-mueblesrex {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesrex 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesrex {
+	0%, 25%{
+		background-image: url("/img/products/modureximg/100.jpg");
+	}
+	26%, 50%{
+		background-image: url("/img/products/modureximg/2.jpg");
+	}
+	51%, 75%{
+		background-image: url("/img/products/modureximg/22.jpg");
+	}
+	76%, 100%{
+		background-image: url("/img/products/modureximg/1.jpg");
+	}
+}
+.mode-mueblesrex .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesrex .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.mode-mueblesrex .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Mueblesshalom */
+
+.mode-mueblesshalom {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesshalom 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesshalom {
+	0%, 25%{
+		background-image: url("img/products/modusheimg/17.jpg");
+	}
+	26%, 50%{
+		background-image: url("img/products/modusheimg/233.jpg");
+	}
+	51%, 75%{
+		background-image: url("img/products/modusheimg/16.png");
+	}
+	76%, 100%{
+		background-image: url("img/products/modusheimg/14.jpg");
+	}
+}
+.mode-mueblesshalom .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesshalom .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-mueblesshalom .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Muebleslondres */
+
+.mode-muebleslondres {
+	width: 100%;
+	height: 90vh;
+	animation: mode-muebleslondres 20s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-muebleslondres {
+	0%{
+		background-image: url("img/products/modulondres/10.webp");
+	}
+	25%{
+		background-image: url("img/products/modulondres/10.webp");
+	}
+    26%{
+        background-image: url("img/products/modulondres/10.webp");
+    }
+    50%{
+        background-image: url("img/products/modulondres/10.webp");
+    }
+    51%{
+        background-image: url("img/products/modulondres/10.webp");
+    }
+	75%{
+		background-image: url("img/products/modulondres/10.webp");
+	}
+	76%{
+		background-image: url("img/products/modulondres/10.webp");
+	}
+    100%{
+        background-image: url("img/products/modulondres/10.webp");
+    }
+}
+.mode-muebleslondres .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 850px;
+	text-align: center;
+}
+.mode-muebleslondres .info h1{
+    width: 100%;
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-muebleslondres .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Mueblesmoduvintage */
+
+.mode-mueblesmoduvintage {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesmoduvintage 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesmoduvintage {
+	0%, 25%{
+		background-image: url("/img/products/moduvintageimg/turqueza1.webp");
+	}
+	26%, 50%{
+		background-image: url("/img/products/moduvintageimg/chocolate1.webp");
+	}
+	51%, 75%{
+		background-image: url("/img/products/moduvintageimg/crema8.jpg");
+	}
+	76%, 100%{
+		background-image: url("/img/products/moduvintageimg/azul1.webp");
+	}
+}
+.mode-mueblesmoduvintage .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesmoduvintage .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-mueblesmoduvintage .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* Modelos Mueblesmodubrazo */
+
+.mode-mueblesmodubrazo {
+	width: 100%;
+	height: 90vh;
+	animation: mode-mueblesmodubrazo 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes mode-mueblesmodubrazo {
+	0%, 25%{
+		background-image: url("/img/products/modubrazoimg/1000.jpg");
+	}
+	26%, 50%{
+		background-image: url("/img/products/modubrazoimg/900.jpg");
+	}
+	51%, 75%{
+		background-image: url("/img/products/modubrazoimg/507.jpg");
+	}
+	76%, 100%{
+		background-image: url("/img/products/modubrazoimg/107.jpg");
+	}
+}
+.mode-mueblesmodubrazo .info{
+	z-index: 1;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+}
+.mode-mueblesmodubrazo .info h1{
+	color: #fff;
+	font-size: 65px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+    line-height: 90px;
+}
+.mode-mueblesmodubrazo .info p{
+	color: #c7c7c7;
+    font-size: 25px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+} 
+
+
+
+/* Start Media Query */
+@media (max-width: 1630px) {
+    #product1 .pro {
+        min-width: 32.6%;
+    }
+    #product1 .pro img {
+        height: 310px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .section-p1 {
+        padding: 110px 20px 40px;
+    }
+    
+    #product1 .pro {
+        min-width: 49%;
+    }
+    #prodetails .single-pro-image {
+        width: 60%;
+        margin-right: 20px;
+        padding-top: 60px;
+    }
+    #prodetails .single-pro-datails {
+        width: 40%;
+        padding-top: 20px;
+    }
+    #prodetails .single-pro-datails h4 {
+        font-size: 35px;
+        padding: 15px 0 5px 0;
+    }
+    #prodetails .single-pro-datails span {
+        font-size: 30px;
+    }
+    #product1 .pro img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 1340px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-image: url("img/cojines1.jpeg");
+        background-position: bottom ;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        width: 300px;
+        background-color: #babdae;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 90px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #prodetails {
+        align-items: center;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+        padding-top: 15px;
+    }
+    #prodetails .single-pro-datails {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .section-p1 {
+        padding: 110px 20px;
+    }
+    #product1 .pro {
+        min-width: 49%;
+    }
+}
+
+@media (max-width: 1024px) {  
+    .section-p1 {
+        padding: 110px 20px;
+    }
+    .section-p111 {
+        padding: 0px 20px;
+    }
+    #product1 .pro {
+        min-width: 49%;
+    }
+}
+@media (max-width: 899px) {
+    #product1 .pro {
+        min-width: 48.9%;
+    }
+    #prodetails {
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+    #prodetails .single-pro-datails {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 799px) {
+    .section-p1 {
+        padding: 110px 20px 20px;            
+    }
+
+    .section-p111 {
+        padding: 0 20px;            
+    }
+
+    #navbar li {
+        margin-bottom: 30px;
+    }
+
+    #navbar li a {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #product1 .pro {
+        min-width: 100%;
+    }
+    #product1 .pro img {
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+    
+    /* Tienda Page */
+
+    #page-header p {
+        font-size: 30px;
+    }
+    /* Single Product */
+    #prodetails .single-pro-datails span {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 540px) {
+    h1{
+        line-height: 60px;
+    }
+    #banner2 {
+        flex-direction: column;
+    }
+    #banner2 .banner-box {
+        width: 100%;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 477px) {
+    p {
+        margin: 20px 0 10px 0;
+    }
+    .section-p1 {
+        padding: 110px 10px 10px;            
+    }
+    .section-p111 {
+        padding: 10px;            
+    }
+    #header {
+        padding: 0px 10px;
+    }
+    h1 {
+        font-size: 38px;
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 59%;
+        text-align: center;
+    }
+    #pagination {
+        padding: 40px 0px;
+    }
+    #pagination ul li {
+        margin-right: 0px;
+    }
+    #product1 .pro-container {
+        padding-top: 10px;
+    }
+    #product1 .pro img {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .links {
+        font-size: 50px;
+    }
+    .footer-container {
+        padding: 40px 10px;
+    }
+    .footer-mapa {
+        padding: 0 0;
+    }
+
+    /* Single Product */
+    #prodetails {
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+    #prodetails .single-pro-datails {
+        width: 100%;
+    }
+    #prodetails .single-pro-datails h6 {
+        font-size: 16px;
+    }
+    #prodetails .single-pro-datails h4 {
+        padding: 20px 0 10px 0;
+        font-size: 40px;
+    }
+    #prodetails .single-pro-datails span {
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    /* Modelos de Mueblescama */
+
+    .mode-mueblescama {
+        height: 30vh;
+    }
+
+    .mode-mueblescama .info h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblescama .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Mueblesdual */
+
+    .mode-mueblesdual {
+        height: 30vh;
+    }
+
+    .mode-mueblesdual .info h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesdual .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Mueblesburbuja */
+
+    .mode-mueblesburbuja {
+        height: 30vh;
+    }
+
+    .mode-mueblesburbuja .info h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesburbuja .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Mueblesrex */
+    
+    .mode-mueblesrex {
+        height: 30vh;
+    }
+
+    .mode-mueblesrex .info h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesrex .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Mueblesshalom */
+    
+    .mode-mueblesshalom {
+        height: 30vh;
+    }
+
+    .mode-mueblesshalom .info h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesshalom .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Muebleslondres */
+    
+    .mode-muebleslondres {
+        height: 30vh;
+    }
+
+    .mode-muebleslondres .info h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .mode-muebleslondres .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+
+    /* Modelos de Mueblesmoduvintage */
+    
+    .mode-mueblesmoduvintage {
+        height: 30vh;
+    }
+
+    .mode-mueblesmoduvintage .info h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesmoduvintage .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    /* Modelos de Mueblesmodubrazo */
+    
+    .mode-mueblesmodubrazo {
+        height: 30vh;
+    }
+
+    .mode-mueblesmodubrazo .info h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .mode-mueblesmodubrazo .info p{
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-p1 {
+        padding: 110px 10px;
+    }
+    #prodetails .single-pro-datails select {
+        padding: 5px 25%;
+    }
+    #prodetails .single-pro-datails h4 {
+        font-size: 35px;
+    }
+    button.normal {
+        padding: 12px 15px;
+    }
+}
